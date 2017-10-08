@@ -14,7 +14,7 @@ class InitialViewController: UIViewController {
     //Main Window
     @IBOutlet weak var webViewBG: UIWebView!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
     //-------------------------------------------------------
     
     override func viewDidLoad() {
@@ -41,8 +41,8 @@ class InitialViewController: UIViewController {
         
         self.loginButton.layer.borderColor = UIColor.white.cgColor
         self.loginButton.layer.borderWidth = 2
-        self.signUpButton.layer.borderColor = UIColor.white.cgColor
-        self.signUpButton.layer.borderWidth = 2
+        self.helpButton.layer.borderColor = UIColor.white.cgColor
+        self.helpButton.layer.borderWidth = 2
     }
     
     override func didReceiveMemoryWarning() {

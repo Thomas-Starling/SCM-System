@@ -95,99 +95,6 @@
             </objects>
             <point key="canvasLocation" x="-236" y="403"/>
         </scene>
-        <!--Register-->
-        <scene sceneID="1Pc-c2-AXd">
-            <objects>
-                <viewController title="Register" id="bOB-4T-yYM" customClass="RegisterViewController" customModule="SCM_System" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1aR-mj-n0y"/>
-                        <viewControllerLayoutGuide type="bottom" id="fep-uv-5os"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h4J-Yq-1nD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u3A-EL-gu7">
-                                <rect key="frame" x="143" y="125" width="188" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-9B-wbf">
-                                <rect key="frame" x="143" y="171" width="188" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adc-5k-nOh">
-                                <rect key="frame" x="143" y="32" width="188" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACr-Rt-ta8">
-                                <rect key="frame" x="143" y="79" width="188" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms &amp; Conditions here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFd-Af-iaC">
-                                <rect key="frame" x="113" y="220" width="160" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y0-Hv-NB4">
-                                <rect key="frame" x="43" y="38" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btB-te-onK">
-                                <rect key="frame" x="43" y="129" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4K-Do-CQf">
-                                <rect key="frame" x="54" y="249" width="277" height="35"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="register:" destination="bOB-4T-yYM" eventType="touchUpInside" id="GRU-zj-tJ1"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="lbr-1p-52R"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Sign Up" id="4u6-MJ-kRt"/>
-                    <connections>
-                        <outlet property="regConfirmEmailAddress" destination="ACr-Rt-ta8" id="dXs-bO-enh"/>
-                        <outlet property="regConfirmPassword" destination="ebG-9B-wbf" id="y46-8y-Le3"/>
-                        <outlet property="regEmailAddress" destination="adc-5k-nOh" id="CCd-7G-1Tf"/>
-                        <outlet property="regPassword" destination="u3A-EL-gu7" id="Eni-Av-olO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I3e-2k-wWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="510" y="-302"/>
-        </scene>
         <!--Login-->
         <scene sceneID="v2E-k3-3aP">
             <objects>
@@ -244,7 +151,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="FPA-oV-4cU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="erb-Yo-fe6"/>
+                    <navigationItem key="navigationItem" title="Staff Login" id="erb-Yo-fe6"/>
                     <connections>
                         <outlet property="emailAddress" destination="0Fv-tB-snI" id="UFG-uF-HdA"/>
                         <outlet property="password" destination="mBj-eo-cdI" id="5Fw-kG-pif"/>
@@ -253,6 +160,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXT-Rm-40D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="-302.6986506746627"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="62u-5R-RsE">
+            <objects>
+                <viewController title="Help" id="2v2-5f-bT1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LrR-b6-hT3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gBW-37-iJP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibP-4C-t0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="-304"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="Efx-Vk-gMS">
@@ -284,11 +206,11 @@
                                     <constraint firstAttribute="width" constant="200" id="rZr-8i-YDQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Sign Up">
+                                <state key="normal" title="Hep">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bOB-4T-yYM" kind="show" id="8nK-Fw-bqR"/>
+                                    <segue destination="2v2-5f-bT1" kind="show" id="Dmf-2z-2nl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ka-b4-nkp">
@@ -323,8 +245,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="DBp-ZC-Z7z"/>
                     <connections>
+                        <outlet property="helpButton" destination="Irc-aU-BU8" id="hbv-jT-gHb"/>
                         <outlet property="loginButton" destination="1ka-b4-nkp" id="6c7-J1-WXr"/>
-                        <outlet property="signUpButton" destination="Irc-aU-BU8" id="c3Y-RM-OgX"/>
                         <outlet property="webViewBG" destination="bDT-6J-nTK" id="Oht-qw-BGe"/>
                     </connections>
                 </viewController>

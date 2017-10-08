@@ -12,7 +12,6 @@
 		7740626C1F863D9400EAD3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7740626B1F863D9400EAD3E2 /* Assets.xcassets */; };
 		7740626F1F863D9400EAD3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740626D1F863D9400EAD3E2 /* LaunchScreen.storyboard */; };
 		77BEF6DB1F8A43DE00F6DC4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF6CED1F8A410900832E38 /* LoginViewController.swift */; };
-		77BEF6DC1F8A43DE00F6DC4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF6CF11F8A410A00832E38 /* RegisterViewController.swift */; };
 		77BEF6DD1F8A43DE00F6DC4E /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF6CEE1F8A410A00832E38 /* RecoveryViewController.swift */; };
 		77BEF6E11F8A466F00F6DC4E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BEF6E01F8A466F00F6DC4E /* InitialViewController.swift */; };
 		77DF6CF31F8A412200832E38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 774062761F863DBB00EAD3E2 /* GoogleService-Info.plist */; };
@@ -34,7 +33,6 @@
 		77DF6CEE1F8A410A00832E38 /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 		77DF6CEF1F8A410A00832E38 /* WebViewContent.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 		77DF6CF01F8A410A00832E38 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		77DF6CF11F8A410A00832E38 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		77DF6CF71F8A41B500832E38 /* background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = background.gif; sourceTree = "<group>"; };
 		9D0EB1093C53DC785D7E480B /* Pods_SCM_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCM_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78AA808011B25239830FEB8 /* Pods-SCM System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCM System.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCM System/Pods-SCM System.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				77DF6CEF1F8A410A00832E38 /* WebViewContent.html */,
 				77DF6CF01F8A410A00832E38 /* Login.storyboard */,
 				77DF6CED1F8A410900832E38 /* LoginViewController.swift */,
-				77DF6CF11F8A410A00832E38 /* RegisterViewController.swift */,
 				77DF6CEE1F8A410A00832E38 /* RecoveryViewController.swift */,
 				77BEF6E01F8A466F00F6DC4E /* InitialViewController.swift */,
 			);
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77BEF6DB1F8A43DE00F6DC4E /* LoginViewController.swift in Sources */,
-				77BEF6DC1F8A43DE00F6DC4E /* RegisterViewController.swift in Sources */,
 				77BEF6DD1F8A43DE00F6DC4E /* RecoveryViewController.swift in Sources */,
 				77BEF6E11F8A466F00F6DC4E /* InitialViewController.swift in Sources */,
 				774062651F863D9400EAD3E2 /* AppDelegate.swift in Sources */,

@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>303206186168-7u0iivuch4d84af0o5h3o7em4gaeh9bg.apps.googleusercontent.com</string>
+	<string>905202998216-lfk47k0l6ttvdl51d6uvk5hdl40n4822.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.303206186168-7u0iivuch4d84af0o5h3o7em4gaeh9bg</string>
+	<string>com.googleusercontent.apps.905202998216-lfk47k0l6ttvdl51d6uvk5hdl40n4822</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCTWEHX2IoVyJWJaRWpFkGQSJrTQXg5BWQ</string>
+	<string>AIzaSyBrELayNJvbkZO_w096HQKabXlvbqmXVlc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>303206186168</string>
+	<string>905202998216</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.tomstarling.SCM-System</string>
 	<key>PROJECT_ID</key>
-	<string>scm-system-97141</string>
+	<string>scm-system-b6bf2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>scm-system-97141.appspot.com</string>
+	<string>scm-system-b6bf2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:303206186168:ios:9c3478fabce47762</string>
+	<string>1:905202998216:ios:9c3478fabce47762</string>
 	<key>DATABASE_URL</key>
-	<string>https://scm-system-97141.firebaseio.com</string>
+	<string>https://scm-system-b6bf2.firebaseio.com</string>
 </dict>
 </plist>

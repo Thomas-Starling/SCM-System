@@ -8,5 +8,6 @@ target 'SCM System' do
   # Pods for SCM System
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

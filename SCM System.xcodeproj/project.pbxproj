@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		38915DBE89682A15EB5FA184 /* Pods_SCM_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51948A35ECF1237D83E809AC /* Pods_SCM_System.framework */; };
 		773BDF231F9DEC2700E0F027 /* background.gif in Resources */ = {isa = PBXBuildFile; fileRef = 773BDF221F9DEC2700E0F027 /* background.gif */; };
+		773BDF251F9DECB200E0F027 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773BDF241F9DECB200E0F027 /* MainScreen.storyboard */; };
+		773BDF271F9DECC200E0F027 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773BDF261F9DECC200E0F027 /* MainScreenViewController.swift */; };
+		773BDF2A1F9DEDCF00E0F027 /* ManagerMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773BDF291F9DEDCF00E0F027 /* ManagerMain.storyboard */; };
+		773BDF2C1F9DEDDA00E0F027 /* ManagerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773BDF2B1F9DEDDA00E0F027 /* ManagerMainViewController.swift */; };
 		774062651F863D9400EAD3E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774062641F863D9400EAD3E2 /* AppDelegate.swift */; };
 		7740626C1F863D9400EAD3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7740626B1F863D9400EAD3E2 /* Assets.xcassets */; };
 		7740626F1F863D9400EAD3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740626D1F863D9400EAD3E2 /* LaunchScreen.storyboard */; };
@@ -24,6 +28,10 @@
 		1E3484ABED8011DC6584F891 /* Pods-SCM System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCM System.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCM System/Pods-SCM System.release.xcconfig"; sourceTree = "<group>"; };
 		51948A35ECF1237D83E809AC /* Pods_SCM_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCM_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		773BDF221F9DEC2700E0F027 /* background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = background.gif; sourceTree = "<group>"; };
+		773BDF241F9DECB200E0F027 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
+		773BDF261F9DECC200E0F027 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		773BDF291F9DEDCF00E0F027 /* ManagerMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerMain.storyboard; sourceTree = "<group>"; };
+		773BDF2B1F9DEDDA00E0F027 /* ManagerMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerMainViewController.swift; sourceTree = "<group>"; };
 		774062611F863D9400EAD3E2 /* SCM System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCM System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		774062641F863D9400EAD3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7740626B1F863D9400EAD3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +66,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		773BDF281F9DED6C00E0F027 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				773BDF291F9DEDCF00E0F027 /* ManagerMain.storyboard */,
+				773BDF2B1F9DEDDA00E0F027 /* ManagerMainViewController.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		774062581F863D9400EAD3E2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				77DF6CEB1F8A40FE00832E38 /* Storyboards */,
+				774062641F863D9400EAD3E2 /* AppDelegate.swift */,
 				7740626B1F863D9400EAD3E2 /* Assets.xcassets */,
 				7740626D1F863D9400EAD3E2 /* LaunchScreen.storyboard */,
 				77721C681F9DE94600B1B38D /* GoogleService-Info.plist */,
@@ -92,6 +110,8 @@
 		77BEF6DF1F8A456100F6DC4E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				773BDF241F9DECB200E0F027 /* MainScreen.storyboard */,
+				773BDF261F9DECC200E0F027 /* MainScreenViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -99,7 +119,7 @@
 		77DF6CEB1F8A40FE00832E38 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				774062641F863D9400EAD3E2 /* AppDelegate.swift */,
+				773BDF281F9DED6C00E0F027 /* Manager */,
 				77BEF6DF1F8A456100F6DC4E /* Main */,
 				77DF6CEC1F8A410300832E38 /* Login */,
 			);
@@ -202,7 +222,9 @@
 				77DF6CF41F8A418600832E38 /* WebViewContent.html in Resources */,
 				7740626F1F863D9400EAD3E2 /* LaunchScreen.storyboard in Resources */,
 				7740626C1F863D9400EAD3E2 /* Assets.xcassets in Resources */,
+				773BDF2A1F9DEDCF00E0F027 /* ManagerMain.storyboard in Resources */,
 				77721C691F9DE94600B1B38D /* GoogleService-Info.plist in Resources */,
+				773BDF251F9DECB200E0F027 /* MainScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773BDF271F9DECC200E0F027 /* MainScreenViewController.swift in Sources */,
+				773BDF2C1F9DEDDA00E0F027 /* ManagerMainViewController.swift in Sources */,
 				77BEF6DB1F8A43DE00F6DC4E /* LoginViewController.swift in Sources */,
 				77BEF6DD1F8A43DE00F6DC4E /* RecoveryViewController.swift in Sources */,
 				77BEF6E11F8A466F00F6DC4E /* InitialViewController.swift in Sources */,

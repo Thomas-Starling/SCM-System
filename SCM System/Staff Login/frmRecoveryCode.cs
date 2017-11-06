@@ -33,13 +33,13 @@ namespace SCM_System.Login
                     try
                     {
                         Connection.Open();
-                        SqlCommand cmd = new SqlCommand(@"SELECT Count(*) FROM Manager WHERE recoveryCode=@code", Connection);
+                        SqlCommand cmd = new SqlCommand(@"SELECT Count(*) FROM Staff WHERE recoveryCode=@code", Connection);
                         cmd.Parameters.AddWithValue("@code", txtCode.Text);
                         int result = (int)cmd.ExecuteScalar();
 
                         if (result > 0)
                         {
-                            SqlCommand commandPass = new SqlCommand("SELECT Password, recoveryCode FROM Manager WHERE recoveryCode = '" + txtCode.Text + "'", Connection);
+                            SqlCommand commandPass = new SqlCommand("SELECT Password, recoveryCode FROM Staff WHERE recoveryCode = '" + txtCode.Text + "'", Connection);
 
                             string password = ((string)commandPass.ExecuteScalar());
                             MessageBox.Show("Your password is: " + password, "Password Recovered", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

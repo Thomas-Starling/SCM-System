@@ -62,7 +62,9 @@ namespace SCM_System.Login
 
                         if (result > 0)
                         {
-                            //Main window here
+                            Main.frmMain main = new Main.frmMain();
+                            this.Hide();
+                            main.Show();
                             Connection.Close();
                         }
                         else

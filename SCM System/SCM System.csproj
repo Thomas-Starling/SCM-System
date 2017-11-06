@@ -64,22 +64,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Login\frmLogin.cs">
+    <Compile Include="Staff Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\frmLogin.Designer.cs">
+    <Compile Include="Staff Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\frmRecovery.cs">
+    <Compile Include="Staff Login\frmRecovery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\frmRecovery.Designer.cs">
+    <Compile Include="Staff Login\frmRecovery.Designer.cs">
       <DependentUpon>frmRecovery.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\frmRecoveryCode.cs">
+    <Compile Include="Staff Login\frmRecoveryCode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\frmRecoveryCode.Designer.cs">
+    <Compile Include="Staff Login\frmRecoveryCode.Designer.cs">
       <DependentUpon>frmRecoveryCode.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\frmMain.cs">
@@ -88,15 +88,16 @@
     <Compile Include="Main\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Login\frmLogin.resx">
+    <EmbeddedResource Include="Staff Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\frmRecovery.resx">
+    <EmbeddedResource Include="Staff Login\frmRecovery.resx">
       <DependentUpon>frmRecovery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\frmRecoveryCode.resx">
+    <EmbeddedResource Include="Staff Login\frmRecoveryCode.resx">
       <DependentUpon>frmRecoveryCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">
@@ -160,6 +161,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Manager Login\" />
+    <Folder Include="Manager Tools\" />
+    <Folder Include="Staff Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

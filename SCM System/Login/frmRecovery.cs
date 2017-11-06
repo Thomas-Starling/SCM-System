@@ -35,7 +35,7 @@ namespace SCM_System.Login
                     try
                     {
                         Connection.Open();
-                        SqlCommand cmd = new SqlCommand(@"SELECT Count(*) FROM Staff WHERE emailAddress=@emailAddress", Connection);
+                        SqlCommand cmd = new SqlCommand(@"SELECT Count(*) FROM Staff WHERE email=@emailAddress", Connection);
                         cmd.Parameters.AddWithValue("@emailAddress", txtEmail.Text);
                         int result = (int)cmd.ExecuteScalar();
 

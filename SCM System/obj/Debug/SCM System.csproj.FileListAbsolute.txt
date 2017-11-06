@@ -12,3 +12,4 @@ D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.exe
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.pdb
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\database.mdf
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\database_log.ldf
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.frmMain.resources

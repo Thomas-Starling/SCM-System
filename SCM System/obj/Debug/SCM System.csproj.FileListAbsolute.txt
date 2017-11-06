@@ -1,2 +1,14 @@
 D:\My Data\Documents\GitHub\SCM System\SCM System\bin\Debug\SCM System.exe.config
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.exe.config
+D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.exe
+D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.pdb
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csprojResolveAssemblyReference.cache
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Login.frmLogin.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Login.frmRecovery.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Login.frmRecoveryCode.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Properties.Resources.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csproj.GenerateResource.Cache
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.exe
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.pdb
+D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\database.mdf
+D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\database_log.ldf

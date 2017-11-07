@@ -56,8 +56,8 @@ namespace SCM_System.Staff_Login
 
                         if (result > 0)
                         {
-                            
                             Connection.Close();
+
                         }
                         else
                         {
@@ -83,7 +83,9 @@ namespace SCM_System.Staff_Login
 
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
         {
-
+            frmRecovery recovery = new frmRecovery();
+            this.Hide();
+            recovery.Show();
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)

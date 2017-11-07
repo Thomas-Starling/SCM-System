@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace SCM_System.Login
+namespace SCM_System.Staff_Login
 {
     public partial class frmRecovery : Form
     {
@@ -17,10 +10,10 @@ namespace SCM_System.Login
         {
             InitializeComponent();
 
-            this.txtEmail.KeyPress += new KeyPressEventHandler(CheckEnter);
+            txtEmail.KeyPress += new KeyPressEventHandler(CheckEnter);
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             using (SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\database.mdf;Integrated Security=True;Connect Timeout=30"))
             {
@@ -42,8 +35,9 @@ namespace SCM_System.Login
                         if (result > 0)
                         {
                             Connection.Close();
-                            frmRecoveryCode verify = new frmRecoveryCode();
-                            verify.Show();
+                            frmRecoveryCode code = new frmRecoveryCode();
+                            code.Show();
+                            this.Hide();
                         }
                         else
                         {
@@ -63,13 +57,15 @@ namespace SCM_System.Login
         {
             if (e.KeyChar == (char)13)
             {
-                btnSubmit_Click(this, new EventArgs());
+                bunifuThinButton21_Click(this, new EventArgs());
             }
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmLogin login = new frmLogin();
+            login.Show();
         }
     }
 }

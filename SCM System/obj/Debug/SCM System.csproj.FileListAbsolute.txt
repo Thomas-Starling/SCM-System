@@ -15,3 +15,4 @@ D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Log
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csproj.CoreCompileInputs.cache
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Login.frmRecovery.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Login.frmRecoveryCode.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.Home.resources

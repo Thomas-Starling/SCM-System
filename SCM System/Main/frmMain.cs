@@ -15,6 +15,50 @@ namespace SCM_System.Main
         public frmMain()
         {
             InitializeComponent();
+
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button2.Top;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button3.Top;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button4.Top;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button5.Top;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button7.Top;
         }
     }
 }

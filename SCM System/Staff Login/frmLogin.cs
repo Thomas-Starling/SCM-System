@@ -57,7 +57,9 @@ namespace SCM_System.Staff_Login
                         if (result > 0)
                         {
                             Connection.Close();
-
+                            Main.frmMain main = new Main.frmMain();
+                            this.Hide();
+                            main.Show();
                         }
                         else
                         {

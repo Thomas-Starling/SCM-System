@@ -3,7 +3,6 @@ D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.exe.confi
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.exe
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.pdb
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csprojResolveAssemblyReference.cache
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Login.frmLogin.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Login.frmRecovery.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Login.frmRecoveryCode.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Properties.Resources.resources
@@ -13,3 +12,6 @@ D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.pdb
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\database.mdf
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\database_log.ldf
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.frmMain.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Login.frmLogin.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csproj.CoreCompileInputs.cache

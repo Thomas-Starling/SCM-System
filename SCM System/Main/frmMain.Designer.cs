@@ -46,7 +46,9 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.button6 = new System.Windows.Forms.Button();
             this.home1 = new SCM_System.Main.Home();
+            this.tableAdapterManager1 = new SCM_System.databaseDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -102,7 +104,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(197, 54);
             this.button5.TabIndex = 9;
-            this.button5.Text = "       Take Away";
+            this.button5.Text = "       ";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -153,14 +155,14 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 54);
             this.button2.TabIndex = 12;
-            this.button2.Text = "       Eat-In";
+            this.button2.Text = "       Status";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // SidePanel
             // 
-            this.SidePanel.BackColor = System.Drawing.Color.Crimson;
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(75)))), ((int)(((byte)(41)))));
             this.SidePanel.Location = new System.Drawing.Point(1, 70);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 54);
@@ -203,10 +205,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SCM_System.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -15);
+            this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -218,7 +221,6 @@
             this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.Location = new System.Drawing.Point(1125, 20);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(32, 35);
@@ -233,8 +235,7 @@
             this.button12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(1076, 20);
+            this.button12.Location = new System.Drawing.Point(1066, 20);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(32, 35);
             this.button12.TabIndex = 6;
@@ -248,8 +249,7 @@
             this.button11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(1038, 20);
+            this.button11.Location = new System.Drawing.Point(1028, 20);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(32, 35);
             this.button11.TabIndex = 7;
@@ -275,6 +275,20 @@
             this.bunifuTileButton1.Size = new System.Drawing.Size(128, 129);
             this.bunifuTileButton1.TabIndex = 8;
             // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(990, 20);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(32, 35);
+            this.button6.TabIndex = 10;
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // home1
             // 
             this.home1.Location = new System.Drawing.Point(221, 202);
@@ -282,11 +296,19 @@
             this.home1.Size = new System.Drawing.Size(933, 525);
             this.home1.TabIndex = 9;
             // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.Connection = null;
+            this.tableAdapterManager1.StaffTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = SCM_System.databaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1169, 739);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.button13);
@@ -326,5 +348,7 @@
         private System.Windows.Forms.Button button2;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
         private Home home1;
+        private System.Windows.Forms.Button button6;
+        private databaseDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
     }
 }

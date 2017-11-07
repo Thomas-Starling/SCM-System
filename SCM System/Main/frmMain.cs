@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SCM_System.Main
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        public frmMain(string username)
         {
             InitializeComponent();
+
+            bunifuTileButton1.LabelText = username;
 
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
@@ -22,7 +18,15 @@ namespace SCM_System.Main
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\database.mdf;Integrated Security=True;Connect Timeout=30");
+            try
+            {
+                Connection.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unexpected error:" + ex.Message);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

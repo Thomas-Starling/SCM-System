@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Drawing;
 
 namespace SCM_System.Staff_Login
 {
@@ -57,7 +56,7 @@ namespace SCM_System.Staff_Login
                         if (result > 0)
                         {
                             Connection.Close();
-                            Main.frmMain main = new Main.frmMain();
+                            Main.frmMain main = new Main.frmMain(txtUsername.Text);
                             this.Hide();
                             main.Show();
                         }

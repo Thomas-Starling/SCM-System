@@ -64,6 +64,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Account\Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\HomeAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Account\HomeAccount.Designer.cs">
+      <DependentUpon>HomeAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,6 +120,15 @@
     <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Account\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\HomeAccount.resx">
+      <DependentUpon>HomeAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,10 +186,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>database.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\icons8_Back_96px.png" />
-    <None Include="Resources\icons8_Delete_96px_1.png" />
-    <None Include="Resources\Supermarkt.jpg" />
-    <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -185,6 +208,7 @@
     <Folder Include="Images\" />
     <Folder Include="Manager Login\" />
     <Folder Include="Manager Tools\" />
+    <Folder Include="Resources\" />
     <Folder Include="Staff Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

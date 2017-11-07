@@ -111,7 +111,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.isPassword = false;
-            this.txtEmail.Location = new System.Drawing.Point(374, 210);
+            this.txtEmail.Location = new System.Drawing.Point(367, 210);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(370, 44);
@@ -137,7 +137,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(591, 263);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(584, 263);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(153, 45);

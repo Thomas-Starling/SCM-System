@@ -113,7 +113,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.isPassword = false;
-            this.txtUsername.Location = new System.Drawing.Point(375, 159);
+            this.txtUsername.Location = new System.Drawing.Point(367, 159);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(370, 44);
@@ -131,7 +131,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.isPassword = true;
-            this.txtPassword.Location = new System.Drawing.Point(375, 211);
+            this.txtPassword.Location = new System.Drawing.Point(367, 211);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(370, 44);
@@ -157,7 +157,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(592, 281);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(584, 281);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(153, 45);
@@ -168,7 +168,7 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(659, 259);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(651, 259);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(86, 13);
             this.bunifuCustomLabel1.TabIndex = 5;

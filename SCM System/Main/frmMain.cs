@@ -64,5 +64,10 @@ namespace SCM_System.Main
             SidePanel.Height = button2.Height;
             SidePanel.Top = button7.Top;
         }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

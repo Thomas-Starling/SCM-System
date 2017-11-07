@@ -48,7 +48,6 @@
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.button6 = new System.Windows.Forms.Button();
             this.home1 = new SCM_System.Main.Home();
-            this.tableAdapterManager1 = new SCM_System.databaseDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,9 +82,9 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(12, 673);
+            this.button7.Location = new System.Drawing.Point(11, 673);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 54);
+            this.button7.Size = new System.Drawing.Size(194, 54);
             this.button7.TabIndex = 7;
             this.button7.Text = "       Account";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -100,11 +99,11 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(12, 308);
+            this.button5.Location = new System.Drawing.Point(11, 308);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(197, 54);
+            this.button5.Size = new System.Drawing.Size(194, 54);
             this.button5.TabIndex = 9;
-            this.button5.Text = "       ";
+            this.button5.Text = "       Stock Control";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -117,9 +116,9 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(12, 248);
+            this.button4.Location = new System.Drawing.Point(11, 248);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 54);
+            this.button4.Size = new System.Drawing.Size(194, 54);
             this.button4.TabIndex = 10;
             this.button4.Text = "       Delivery";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,9 +133,9 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(12, 188);
+            this.button3.Location = new System.Drawing.Point(11, 188);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 54);
+            this.button3.Size = new System.Drawing.Size(194, 54);
             this.button3.TabIndex = 11;
             this.button3.Text = "       Collection";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -151,9 +150,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(12, 128);
+            this.button2.Location = new System.Drawing.Point(11, 128);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 54);
+            this.button2.Size = new System.Drawing.Size(194, 54);
             this.button2.TabIndex = 12;
             this.button2.Text = "       Status";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -163,7 +162,7 @@
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(75)))), ((int)(((byte)(41)))));
-            this.SidePanel.Location = new System.Drawing.Point(1, 70);
+            this.SidePanel.Location = new System.Drawing.Point(0, 70);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 54);
             this.SidePanel.TabIndex = 5;
@@ -176,9 +175,9 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 68);
+            this.button1.Location = new System.Drawing.Point(11, 68);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 54);
+            this.button1.Size = new System.Drawing.Size(194, 54);
             this.button1.TabIndex = 6;
             this.button1.Text = "       Home";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -274,6 +273,7 @@
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(128, 129);
             this.bunifuTileButton1.TabIndex = 8;
+            this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
             // 
             // button6
             // 
@@ -295,13 +295,6 @@
             this.home1.Name = "home1";
             this.home1.Size = new System.Drawing.Size(933, 525);
             this.home1.TabIndex = 9;
-            // 
-            // tableAdapterManager1
-            // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.StaffTableAdapter = null;
-            this.tableAdapterManager1.UpdateOrder = SCM_System.databaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // frmMain
             // 
@@ -349,6 +342,5 @@
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
         private Home home1;
         private System.Windows.Forms.Button button6;
-        private databaseDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
     }
 }

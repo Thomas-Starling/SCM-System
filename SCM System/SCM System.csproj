@@ -64,23 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Account.cs">
+    <Compile Include="Account\frmAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Account\Account.Designer.cs">
-      <DependentUpon>Account.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Details.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Account\Details.Designer.cs">
-      <DependentUpon>Details.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Account\HomeAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Account\HomeAccount.Designer.cs">
-      <DependentUpon>HomeAccount.cs</DependentUpon>
+    <Compile Include="Account\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -120,14 +108,8 @@
     <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Account\Account.resx">
-      <DependentUpon>Account.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Account\Details.resx">
-      <DependentUpon>Details.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Account\HomeAccount.resx">
-      <DependentUpon>HomeAccount.cs</DependentUpon>
+    <EmbeddedResource Include="Account\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

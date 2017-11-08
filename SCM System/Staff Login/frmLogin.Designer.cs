@@ -168,9 +168,10 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(651, 259);
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(642, 259);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(86, 13);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(95, 16);
             this.bunifuCustomLabel1.TabIndex = 5;
             this.bunifuCustomLabel1.Text = "Forgot Password";
             this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SCM_System.Main
+namespace SCM_System.Manager_Tools
 {
-    public partial class home : UserControl
+    public partial class staff : UserControl
     {
-        public home()
+        public staff()
         {
             InitializeComponent();
         }

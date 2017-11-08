@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SCM_System.Main
 {
-    public partial class home : UserControl
+    public partial class settings : UserControl
     {
-        public home()
+        public settings()
         {
             InitializeComponent();
         }

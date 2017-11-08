@@ -47,7 +47,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
@@ -64,11 +65,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\frmAccount.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Account\account.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Account\frmAccount.Designer.cs">
-      <DependentUpon>frmAccount.cs</DependentUpon>
+    <Compile Include="Account\account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
     </Compile>
     <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -81,11 +82,35 @@
     <Compile Include="Main\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Home.cs">
+    <Compile Include="Main\home.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Main\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Tools\report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Tools\report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Tools\staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Tools\staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Tools\stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager Tools\stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff Login\frmRecoveryCode.cs">
       <SubType>Form</SubType>
@@ -108,14 +133,50 @@
     <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Account\frmAccount.resx">
-      <DependentUpon>frmAccount.cs</DependentUpon>
+    <Compile Include="Staff Tools\collection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff Tools\collection.Designer.cs">
+      <DependentUpon>collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Tools\delivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff Tools\delivery.Designer.cs">
+      <DependentUpon>delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Tools\status.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff Tools\status.Designer.cs">
+      <DependentUpon>status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Tools\stockControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff Tools\stockControl.Designer.cs">
+      <DependentUpon>stockControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account\account.resx">
+      <DependentUpon>account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Main\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Tools\report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Tools\staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Tools\stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Login\frmRecoveryCode.resx">
       <DependentUpon>frmRecoveryCode.cs</DependentUpon>
@@ -136,6 +197,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Staff Tools\collection.resx">
+      <DependentUpon>collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Tools\delivery.resx">
+      <DependentUpon>delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Tools\status.resx">
+      <DependentUpon>status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Tools\stockControl.resx">
+      <DependentUpon>stockControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="databaseDataSet.xsc">
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </None>
@@ -188,10 +261,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="Manager Login\" />
-    <Folder Include="Manager Tools\" />
     <Folder Include="Resources\" />
-    <Folder Include="Staff Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

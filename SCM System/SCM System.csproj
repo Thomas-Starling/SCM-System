@@ -112,6 +112,7 @@
     <Compile Include="Manager Tools\stock.Designer.cs">
       <DependentUpon>stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mediator\statusMediator.cs" />
     <Compile Include="Staff Login\frmRecoveryCode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,7 +131,6 @@
     <Compile Include="Staff Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Staff Tools\collection.cs">

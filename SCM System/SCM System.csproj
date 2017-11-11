@@ -113,6 +113,7 @@
       <DependentUpon>stock.cs</DependentUpon>
     </Compile>
     <Compile Include="Mediator\Mediator.cs" />
+    <Compile Include="Mediator\statusMediator.cs" />
     <Compile Include="Staff Login\frmRecoveryCode.cs">
       <SubType>Form</SubType>
     </Compile>

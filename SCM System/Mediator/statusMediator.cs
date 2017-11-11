@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace SCM_System.Mediator
 {
     public delegate void StatusEvent(String id, String n, DataGridView d);
-    public delegate void EnterItem(String id, String n, DataGridView d, SqlConnection c);
+    public delegate bool EnterItem(String id, String n, DataGridView d);
     public delegate bool ValidateItem(String id, String n, SqlConnection c, DataGridView d);
     public delegate void NotifyStaffMember(bool r);
 
@@ -50,9 +50,20 @@ namespace SCM_System.Mediator
             this.validate += new ValidateItem(this.validateItemPrcoessor);
         }
 
-        public void itemPrcoessor(String id, String n, DataGridView d, SqlConnection c)
+        private String ID, name;
+        private DataGridView data;
+
+        public bool itemPrcoessor(String id, String n, DataGridView d)
         {
-            
+            if (id == String.Empty && n == String.Empty)
+            {
+                MessageBox.Show("Search Critera is missig");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public bool validateItemPrcoessor(String id, String name, SqlConnection c, DataGridView d)
@@ -60,21 +71,73 @@ namespace SCM_System.Mediator
             if (id != "")
             {
                 openConnection(c);
-                bool r = returnID(id, c, d);
-                if (r)
+                try
                 {
-                    return true;
-                } else { return false; }
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + id + "')", c);
+                    SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + id + "')", c);
+                    int result = (int)cmdCheck.ExecuteScalar();
+
+                    if (result > 0)
+                    {
+                        d.Visible = true;
+
+                        using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                        {
+                            using (DataSet ds = new DataSet())
+                            {
+                                sda.Fill(ds);
+                                d.DataSource = ds.Tables[0];
+                            }
+                        }
+                        closeConnection(c);
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Unexpected error:" + ex.Message);
+                    return false;
+                }
             }
             else if (name != "")
             {
                 openConnection(c);
-                bool r = returnName(name, c, d);
-                if (r)
+                try
                 {
-                    return true;
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM Stock WHERE (name = '" + name + "')", c);
+                    SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (name = '" + name + "')", c);
+                    int result = (int)cmdCheck.ExecuteScalar();
+
+                    if (result > 0)
+                    {
+
+                        d.Visible = true;
+
+                        using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                        {
+                            using (DataSet ds = new DataSet())
+                            {
+                                sda.Fill(ds);
+                                d.DataSource = ds.Tables[0];
+                            }
+                        }
+                        closeConnection(c);
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
-                else { return false; }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Unexpected error:" + ex.Message);
+                    return false;
+                }
             }
             return false;
         }
@@ -115,77 +178,6 @@ namespace SCM_System.Mediator
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                return false;
-            }
-        }
-
-        public static bool returnID(String id, SqlConnection c, DataGridView d)
-        {
-            try
-            {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + id + "')", c);
-                SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + id + "')", c);
-                int result = (int)cmdCheck.ExecuteScalar();
-
-                if (result > 0)
-                {
-                    d.Visible = true;
-
-                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
-                    {
-                        using (DataSet ds = new DataSet())
-                        {
-                            sda.Fill(ds);
-                            d.DataSource = ds.Tables[0];
-                        }
-                    }
-                    closeConnection(c);
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Unexpected error:" + ex.Message);
-                return false;
-            }
-        }
-
-        public static bool returnName(String name, SqlConnection c, DataGridView d)
-        {
-            try
-            {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Stock WHERE (name = '" + name + "')", c);
-                SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (name = '" + name + "')", c);
-                int result = (int)cmdCheck.ExecuteScalar();
-
-                if (result > 0)
-                {
-
-                    d.Visible = true;
-
-                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
-                    {
-                        using (DataSet ds = new DataSet())
-                        {
-                            sda.Fill(ds);
-                            d.DataSource = ds.Tables[0];
-                        }
-                    }
-                    closeConnection(c);
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Unexpected error:" + ex.Message);
                 return false;
             }
         }

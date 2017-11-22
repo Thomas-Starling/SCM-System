@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using Bunifu;
 
 namespace SCM_System.Mediator
 {
@@ -173,6 +174,11 @@ namespace SCM_System.Mediator
                 MessageBox.Show(ex.ToString());
                 return false;
             }
+        }
+
+        public managerMediator(String id, String name, DataGridView d, Bunifu.Framework.UI.BunifuDropdown fil)
+        {
+            Event e = new Event(id, name);
         }
     }
 }

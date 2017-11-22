@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace SCM_System.Mediator
 {
     public delegate void StatusEvent(String id, String n, DataGridView d);
-    public delegate bool EnterItem(String id, String n, DataGridView d);
+    public delegate void EnterItem(String id, String n, DataGridView d);
     public delegate bool ValidateItem(String id, String n, SqlConnection c, DataGridView d);
     public delegate void NotifyStaffMember(bool r);
 
@@ -53,16 +53,11 @@ namespace SCM_System.Mediator
         private String ID, name;
         private DataGridView data;
 
-        public bool itemPrcoessor(String id, String n, DataGridView d)
+        public void itemPrcoessor(String id, String n, DataGridView d)
         {
             if (id == String.Empty && n == String.Empty)
             {
                 MessageBox.Show("Search Critera is missig");
-                return false;
-            }
-            else
-            {
-                return true;
             }
         }
 

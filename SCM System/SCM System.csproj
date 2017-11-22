@@ -112,8 +112,9 @@
     <Compile Include="Manager Tools\stock.Designer.cs">
       <DependentUpon>stock.cs</DependentUpon>
     </Compile>
+    <None Include="Mediator\Submission\managerMediator.cs" />
     <Compile Include="Mediator\Mediator.cs" />
-    <Compile Include="Mediator\statusMediator.cs" />
+    <None Include="Mediator\Submission\statusMediator.cs" />
     <Compile Include="Staff Login\frmRecoveryCode.cs">
       <SubType>Form</SubType>
     </Compile>

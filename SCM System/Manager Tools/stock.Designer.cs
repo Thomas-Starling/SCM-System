@@ -182,11 +182,11 @@
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dataGridView1.Location = new System.Drawing.Point(298, 102);
+            this.dataGridView1.Location = new System.Drawing.Point(298, 75);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 423);
+            this.dataGridView1.Size = new System.Drawing.Size(638, 450);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.Visible = false;
             // 
@@ -219,7 +219,7 @@
             this.groupBoxAddNew.Controls.Add(this.bunifuCustomLabel2);
             this.groupBoxAddNew.Controls.Add(this.bunifuCustomLabel3);
             this.groupBoxAddNew.Controls.Add(this.bunifuCustomLabel4);
-            this.groupBoxAddNew.Location = new System.Drawing.Point(460, 116);
+            this.groupBoxAddNew.Location = new System.Drawing.Point(458, 95);
             this.groupBoxAddNew.Name = "groupBoxAddNew";
             this.groupBoxAddNew.Size = new System.Drawing.Size(323, 378);
             this.groupBoxAddNew.TabIndex = 16;
@@ -495,7 +495,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(306, 49);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(306, 22);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(143, 45);
@@ -521,7 +521,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(788, 49);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(788, 22);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(143, 45);

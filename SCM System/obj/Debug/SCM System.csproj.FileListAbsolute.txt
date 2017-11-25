@@ -5,23 +5,23 @@ D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.exe.confi
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.exe
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\SCM System.pdb
 D:\My Data\Documents\GitHub\SCM-System\SCM System\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Account.account.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.frmMain.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.Home.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.home.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.settings.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Manager_Tools.report.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Manager_Tools.staff.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Manager_Tools.stock.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Login.frmRecoveryCode.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Login.frmRecovery.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Login.frmLogin.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Properties.Resources.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.collection.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.delivery.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.status.resources
+D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.stockControl.resources
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csproj.GenerateResource.Cache
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csproj.CoreCompileInputs.cache
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.exe
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.pdb
 D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM System.csprojResolveAssemblyReference.cache
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Manager_Tools.stock.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Account.account.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Main.settings.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Manager_Tools.report.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Manager_Tools.staff.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.collection.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.delivery.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.status.resources
-D:\My Data\Documents\GitHub\SCM-System\SCM System\obj\Debug\SCM_System.Staff_Tools.stockControl.resources

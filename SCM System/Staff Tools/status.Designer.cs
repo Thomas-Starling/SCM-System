@@ -152,7 +152,7 @@
             this.groupBoxResult.Controls.Add(this.bunifuCustomLabel3);
             this.groupBoxResult.Controls.Add(this.lblQuantity);
             this.groupBoxResult.Controls.Add(this.bunifuCustomLabel4);
-            this.groupBoxResult.Location = new System.Drawing.Point(304, 17);
+            this.groupBoxResult.Location = new System.Drawing.Point(428, 74);
             this.groupBoxResult.Name = "groupBoxResult";
             this.groupBoxResult.Size = new System.Drawing.Size(259, 350);
             this.groupBoxResult.TabIndex = 11;

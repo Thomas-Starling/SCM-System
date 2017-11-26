@@ -8,6 +8,7 @@ namespace SCM_System.Mediator
     public delegate void StatusEvent(String id, String n, DataGridView d);
     public delegate void EnterItem(String id, String n, DataGridView d);
     public delegate bool ValidateItem(String id, String n, SqlConnection c, DataGridView d);
+    public delegate bool DisplayResults(SqlConnection c, DataGridView d);
     public delegate void NotifyStaffMember(bool r);
 
     public class Status
@@ -39,15 +40,17 @@ namespace SCM_System.Mediator
 
     class Mediator
     {
-        public event NotifyStaffMember staff;
         public event EnterItem item;
         public event ValidateItem validate;
+        public event DisplayResults display;
+        public event NotifyStaffMember staff;
 
         public Mediator()
         {
-            this.staff += new NotifyStaffMember(this.notifyProcessor);
             this.item += new EnterItem(this.itemPrcoessor);
             this.validate += new ValidateItem(this.validateItemPrcoessor);
+            this.display += new DisplayResults(this.displayProcessor);
+            this.staff += new NotifyStaffMember(this.notifyProcessor);
         }
 
         private String ID, name;
@@ -74,16 +77,7 @@ namespace SCM_System.Mediator
 
                     if (result > 0)
                     {
-                        d.Visible = true;
-
-                        using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
-                        {
-                            using (DataSet ds = new DataSet())
-                            {
-                                sda.Fill(ds);
-                                d.DataSource = ds.Tables[0];
-                            }
-                        }
+                        this.display(cmd, d);
                         closeConnection(c);
                         return true;
                     }
@@ -109,17 +103,7 @@ namespace SCM_System.Mediator
 
                     if (result > 0)
                     {
-
-                        d.Visible = true;
-
-                        using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
-                        {
-                            using (DataSet ds = new DataSet())
-                            {
-                                sda.Fill(ds);
-                                d.DataSource = ds.Tables[0];
-                            }
-                        }
+                        this.display(cmd, d);
                         closeConnection(c);
                         return true;
                     }
@@ -135,6 +119,20 @@ namespace SCM_System.Mediator
                 }
             }
             return false;
+        }
+
+        public void displayProcessor(SqlCommand cmd, DataGridView d)
+        {
+            d.Visible = true;
+
+            using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+            {
+                using (DataSet ds = new DataSet())
+                {
+                    sda.Fill(ds);
+                    d.DataSource = ds.Tables[0];
+                }
+            }
         }
 
         public void notifyProcessor(bool r)

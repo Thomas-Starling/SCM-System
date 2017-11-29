@@ -197,50 +197,54 @@ namespace SCM_System.Mediator
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand(@"DELETE FROM Stock WHERE Id = '" + id + "')", c);
-                    int i = cmd.ExecuteNonQuery();
-
-                    if (i == 1)
+                    DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this item?", "Confirm", MessageBoxButtons.YesNo);
+                    if(dialogResult == DialogResult.Yes)
                     {
-                        MessageBox.Show("Product has being added");
-                        try
-                        {
-                            cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + id + "')", c);
-                            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + id + "')", c);
-                            int result = (int)cmdCheck.ExecuteScalar();
+                        SqlCommand cmd = new SqlCommand(@"DELETE FROM Stock WHERE Id = '" + id + "')", c);
+                        int i = cmd.ExecuteNonQuery();
 
-                            if (result > 0)
+                        if (i == 1)
+                        {
+                            MessageBox.Show("Product has being added");
+                            try
                             {
-                                this.display(cmd, d);
-                                MessageBox.Show("Record could not be deleted at this time");
-                                closeConnection(c);
+                                cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + id + "')", c);
+                                SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + id + "')", c);
+                                int result = (int)cmdCheck.ExecuteScalar();
+
+                                if (result > 0)
+                                {
+                                    this.display(cmd, d);
+                                    MessageBox.Show("Record could not be deleted at this time");
+                                    closeConnection(c);
+                                    return false;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("The record has bein deleted");
+                                    closeConnection(c);
+                                    return true;
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Unexpected error:" + ex.Message);
                                 return false;
                             }
-                            else
-                            {
-                                MessageBox.Show("The record has bein deleted");
-                                closeConnection(c);
-                                return true;
-                            }
+                            closeConnection(c);
                         }
-                        catch (Exception ex)
+                        else
                         {
-                            MessageBox.Show("Unexpected error:" + ex.Message);
+                            MessageBox.Show("No record exists with that information");
                             return false;
                         }
-                        closeConnection(c);
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("No record exists with that information");
+                        MessageBox.Show("Unexpected error:" + ex.Message);
                         return false;
-                    }
+                    }  
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Unexpected error:" + ex.Message);
-                    return false;
-                }  
             }
         }
 

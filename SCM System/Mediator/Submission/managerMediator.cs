@@ -19,7 +19,7 @@ namespace SCM_System.Mediator
 
         private String ID, name, status;
         private DataGridView data;
-        private SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\database.mdf;Integrated Security=True;Connect Timeout=30");
+        private SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\database.mdf;Integrated Security=True;Connect Timeout=30");
 
         public managerMediator()
         {
@@ -35,7 +35,12 @@ namespace SCM_System.Mediator
 
             Mediator m = new Mediator();
 
-            
+            m.item(id, name, data);
+            bool i = m.validate(id, name, status, connection, data);
+            bool j = m.action(i, connection, data);
+            m.valAction(id, name, data);
+            m.update(connection);
+            m.notify(j);
         }
     }
 
@@ -160,45 +165,39 @@ namespace SCM_System.Mediator
                             {
                                 this.display(cmd, d);
                                 closeConnection(c);
+                                return true;
                             }
                             else
                             {
                                 MessageBox.Show("No record exists with that information");
+                                return false;
                             }
                         }
                         catch (Exception ex)
                         {
                             MessageBox.Show("Unexpected error:" + ex.Message);
+                            return false;
                         }
-                        dataGridView1.Visible = true;
-                        groupBoxAddNew.Visible = false;
-                        connection.Close();
+                        closeConnection(c);
+                        return false;
                     }
                     else
                     {
                         MessageBox.Show("No record exists with that information");
+                        return false;
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Unexpected error:" + ex.Message);
+                    return false;
                 }   
             }
             else
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand(@"INSERT INTO Stock ([Id], [name], [price], [quantity], [arrival], [minimum], [maximum], [staffCheck], [status]) VALUES (@productID,@productName, @productPrice, @productQuantity, @productArrival, @productMin, @productMax, @productStaff,  @productStatus);", connection);
-                    cmd.Parameters.AddWithValue("@productID", textBoxID.Text);
-                    cmd.Parameters.AddWithValue("@productName", textBoxName.Text);
-                    cmd.Parameters.AddWithValue("@productPrice", textBoxPrice.Text);
-                    cmd.Parameters.AddWithValue("@productQuantity", textBoxQuan.Text);
-                    cmd.Parameters.AddWithValue("@productArrival", datePickerArrival.Value);
-                    cmd.Parameters.AddWithValue("@productMin", textBoxMin.Text);
-                    cmd.Parameters.AddWithValue("@productMax", textBoxMax.Text);
-                    cmd.Parameters.AddWithValue("@productStaff", textBoxSignOff.Text);
-                    cmd.Parameters.AddWithValue("@productStatus", bunifuDropdownStatus.selectedValue);
-
+                    SqlCommand cmd = new SqlCommand(@"DELETE FROM Stock WHERE Id = '" + id + "')", c);
                     int i = cmd.ExecuteNonQuery();
 
                     if (i == 1)
@@ -206,38 +205,48 @@ namespace SCM_System.Mediator
                         MessageBox.Show("Product has being added");
                         try
                         {
-                            cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + textBoxID.Text + "')", connection);
-                            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + textBoxID.Text + "')", connection);
+                            cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + id + "')", c);
+                            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + id + "')", c);
                             int result = (int)cmdCheck.ExecuteScalar();
 
                             if (result > 0)
                             {
                                 this.display(cmd, d);
+                                MessageBox.Show("Record could not be deleted at this time");
                                 closeConnection(c);
+                                return false;
                             }
                             else
                             {
-                                MessageBox.Show("No record exists with that information");
+                                MessageBox.Show("The record has bein deleted");
+                                closeConnection(c);
+                                return true;
                             }
                         }
                         catch (Exception ex)
                         {
                             MessageBox.Show("Unexpected error:" + ex.Message);
+                            return false;
                         }
-                        dataGridView1.Visible = true;
-                        groupBoxAddNew.Visible = false;
-                        connection.Close();
+                        closeConnection(c);
                     }
                     else
                     {
                         MessageBox.Show("No record exists with that information");
+                        return false;
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Unexpected error:" + ex.Message);
+                    return false;
                 }  
             }
+        }
+
+        public void updateProcessor(SQLTransaction trans)
+        {
+            trans.Commit();
         }
 
         public void displayProcessor(SqlCommand cmd, DataGridView d)
@@ -259,7 +268,7 @@ namespace SCM_System.Mediator
         {
             if (r)
             {
-                MessageBox.Show("Record Found, Select Field...");
+                MessageBox.Show("Sucess, the database has being altered.");
             }
             else
             {

@@ -8,6 +8,6 @@ namespace SCM_System.Mediator
 {
     class stockControlMediator
     {
-
+        
     }
 }

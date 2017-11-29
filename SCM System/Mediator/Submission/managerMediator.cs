@@ -23,7 +23,7 @@ namespace SCM_System.Mediator
 
         public managerMediator()
         {
-            this.status += new OrderManagmentEvent(this.OrderManagmentEventHandler);
+            this.order += new OrderManagmentEvent(this.OrderManagmentEventHandler);
         }
 
         public void OrderManagmentEventHandler(String id, String n, String s, DataGridView d)
@@ -59,7 +59,7 @@ namespace SCM_System.Mediator
         public Mediator()
         {
             this.item += new EnterItem(this.itemPrcoessor);
-            this.validate += new ValidateItem(this.validationProcessor);
+            this.validate += new ValidateItem(this.validateStockPrcoessor);
             this.action += new PerformAction(this.actionProcessor);
             this.valAction += new ValidateAction(this.validationProcessor);
             this.update += new UpdateItem(this.updateProcessor);
@@ -74,7 +74,7 @@ namespace SCM_System.Mediator
             }
         }
 
-        public bool validateItemPrcoessor(String id, String name, String status, SqlConnection c, DataGridView d)
+        public bool validateionPrcoessor(String id, String name, String status, SqlConnection c, DataGridView d)
         {
             if (id != "")
             {
@@ -139,7 +139,7 @@ namespace SCM_System.Mediator
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand(@"INSERT INTO Stock ([Id], [name], [price], [quantity], [arrival], [minimum], [maximum], [staffCheck], [status]) VALUES (@productID,@productName, @productPrice, @productQuantity, @productArrival, @productMin, @productMax, @productStaff,  @productStatus);", connection);
+                    SqlCommand cmd = new SqlCommand(@"INSERT INTO Stock ([Id], [name], [price], [quantity], [arrival], [minimum], [maximum], [staffCheck], [status]) VALUES (@productID,@productName, @productPrice, @productQuantity, @productArrival, @productMin, @productMax, @productStaff,  @productStatus);", c);
                     cmd.Parameters.AddWithValue("@productID", textBoxID.Text);
                     cmd.Parameters.AddWithValue("@productName", textBoxName.Text);
                     cmd.Parameters.AddWithValue("@productPrice", textBoxPrice.Text);
@@ -157,8 +157,8 @@ namespace SCM_System.Mediator
                         MessageBox.Show("Product has being added");
                         try
                         {
-                            cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + textBoxID.Text + "')", connection);
-                            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + textBoxID.Text + "')", connection);
+                            cmd = new SqlCommand("SELECT * FROM Stock WHERE (Id = '" + textBoxID.Text + "')", c);
+                            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM Stock WHERE (Id = '" + textBoxID.Text + "')", c);
                             int result = (int)cmdCheck.ExecuteScalar();
 
                             if (result > 0)

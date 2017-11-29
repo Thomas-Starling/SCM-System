@@ -47,7 +47,7 @@ namespace SCM_System.Mediator
         public event NotifyStaffMember staff;
 
         private String ID, name;
-        private DataGridView data;
+        private DataGridView data;    
 
         public Mediator()
         {

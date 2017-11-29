@@ -35,6 +35,7 @@ namespace SCM_System.Mediator
             m.item(ID, n, d, Connection);
             bool i = m.validate(ID, n, Connection, d);
             m.staff(i);
+            m.display();
         }
     }
 
@@ -45,6 +46,9 @@ namespace SCM_System.Mediator
         public event DisplayResults display;
         public event NotifyStaffMember staff;
 
+        private String ID, name;
+        private DataGridView data;
+
         public Mediator()
         {
             this.item += new EnterItem(this.itemPrcoessor);
@@ -52,9 +56,6 @@ namespace SCM_System.Mediator
             this.display += new DisplayResults(this.displayProcessor);
             this.staff += new NotifyStaffMember(this.notifyProcessor);
         }
-
-        private String ID, name;
-        private DataGridView data;
 
         public void itemPrcoessor(String id, String n, DataGridView d)
         {
